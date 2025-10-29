@@ -1,0 +1,203 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyMwSulxcnKaGTqKslpucsxI",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/anagabriele2025/aluraflix/blob/main/python.ipynb\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "a1c1bb64"
+      },
+      "source": [
+        "## Projeto Demonstrativo em Python\n",
+        "\n",
+        "Este pequeno projeto demonstra alguns conceitos fundamentais da linguagem Python através de exemplos de código."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "c042a4e3"
+      },
+      "source": [
+        "### 1. Variáveis e Tipos de Dados\n",
+        "\n",
+        "Aqui mostramos como declarar variáveis e verificar seus tipos."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "0946cb08",
+        "outputId": "7a83f772-7a47-4e2b-db70-53c8130e8df2"
+      },
+      "source": [
+        "# Criando variáveis de diferentes tipos\n",
+        "numero_inteiro = 10\n",
+        "numero_decimal = 3.14\n",
+        "texto = \"Olá, Python!\"\n",
+        "booleano = True\n",
+        "\n",
+        "print(f\"Inteiro: {numero_inteiro}, Tipo: {type(numero_inteiro)}\")\n",
+        "print(f\"Decimal: {numero_decimal}, Tipo: {type(numero_decimal)}\")\n",
+        "print(f\"Texto: {texto}, Tipo: {type(texto)}\")\n",
+        "print(f\"Booleano: {booleano}, Tipo: {type(booleano)}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Inteiro: 10, Tipo: <class 'int'>\n",
+            "Decimal: 3.14, Tipo: <class 'float'>\n",
+            "Texto: Olá, Python!, Tipo: <class 'str'>\n",
+            "Booleano: True, Tipo: <class 'bool'>\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "e7bda332"
+      },
+      "source": [
+        "### 2. Estruturas de Controle (If/Else)\n",
+        "\n",
+        "Este exemplo demonstra o uso da estrutura condicional `if/else`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "c6ebf111",
+        "outputId": "a4813188-fd33-41a9-ab9b-8e877da582ce"
+      },
+      "source": [
+        "idade = 18\n",
+        "\n",
+        "if idade >= 18:\n",
+        "  print(\"Você é maior de idade.\")\n",
+        "else:\n",
+        "  print(\"Você é menor de idade.\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Você é maior de idade.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "b3358fd5"
+      },
+      "source": [
+        "### 3. Loops (For)\n",
+        "\n",
+        "Aqui utilizamos um loop `for` para iterar sobre uma lista."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "3e08e1a6",
+        "outputId": "b4ff9377-88ab-4895-dc44-364cc4b8bcfe"
+      },
+      "source": [
+        "frutas = [\"maçã\", \"banana\", \"cereja\"]\n",
+        "\n",
+        "for fruta in frutas:\n",
+        "  print(f\"Eu gosto de {fruta}\")"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Eu gosto de maçã\n",
+            "Eu gosto de banana\n",
+            "Eu gosto de cereja\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "a04c7660"
+      },
+      "source": [
+        "### 4. Funções\n",
+        "\n",
+        "Demonstração de como definir e chamar uma função em Python."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "07d46fee",
+        "outputId": "fa217dc8-0af5-4e34-e202-7034d8d75354"
+      },
+      "source": [
+        "def saudacao(nome):\n",
+        "  return f\"Olá, {nome}!\"\n",
+        "\n",
+        "mensagem = saudacao(\"Usuário\")\n",
+        "print(mensagem)"
+      ],
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Olá, Usuário!\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
